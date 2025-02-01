@@ -56,8 +56,8 @@ class LinkedList
         for(int i=0; i<pos-1; i++)
         {
             temp = temp.next;
-            newNode.next = temp.next;
         }
+        newNode.next = temp.next;
         temp.next = newNode;
     }
 }
