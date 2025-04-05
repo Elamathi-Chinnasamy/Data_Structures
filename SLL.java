@@ -35,13 +35,13 @@ class LinkedList
 	
 	public void insertAtBegin(int data)
 	{
+		Node newNode = new Node(data);
 		if(head == null)
 		{
 			head = newNode;
 		}
 		else
 		{
-			Node newNode = new Node(data);
 			newNode.next = head;
 			head = newNode;
 		//System.out.println(head); for address of head
